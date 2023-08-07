@@ -1,0 +1,49 @@
+
+    input[type=text]{
+        border:none;
+        border-bottom: solid 1px black;
+        }
+    input[type=number]{
+        background:purple;
+        color:white;
+    }
+    input[type=email]{
+        background:purple;
+        color:white;
+    }
+    input[type=date]{
+        background:purple;
+        color:white;
+    }
+    input[type=password]{
+        background:purple;
+        color:white;
+    }
+    input[type=text]:focus{
+        outline:none;
+
+    }
+    input[type=submit]{
+        background:red;
+        color:yellow;
+        padding:10px 25px;
+    }
+    input[type=submit]:hover{
+        transform:translatey(5px);
+        background-color: rgb(92, 92, 200);
+    }
+    input[type=reset]{
+        background:red;
+        color:yellow;
+        padding:10px 25px;
+    }
+    input[type=reset]:hover{
+        transform:translatey(5px);
+        background-color: rgb(92, 92, 200);
+    }
+    textarea{
+        resize:none;
+        width:400px;
+        height:400px;
+    }
+
