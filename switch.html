@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body onload="fun()">
+
+
+
+
+
+    <div id="op">
+        
+
+    </div>
+    <script>
+       function fun(){
+        var today=new Date();
+        var dname;
+        var h,m,s,a;
+        h=today.getHours();
+        m=today.getMinutes();
+        s=today.getSeconds();
+        // var i
+        // i=5;
+        
+        if(h>12)
+        {
+            h=h-12;
+
+        }
+        if(h==12)
+        {
+            h=0;
+        }
+        switch(today.getDay())
+        {
+            case 0:
+                dname="Sunday";
+                 break;
+            case 1:
+                dname="Monday";
+                 break;
+            case 2:
+                dname="Tuesday";
+                 break;
+            case 3:
+                dname="Wednesday";
+                 break;
+            case 4:
+                dname="Thursday";
+                 break;
+            case 5:
+                dname="Friday";
+                 break;
+            case 6:
+                dname="Saturday";
+                 break;
+            default:alert("Something wrong");
+            break;
+        
+        }
+
+
+        setTimeout(function(){fun()},1000);
+        document.getElementById("op").innerHTML=h+":"+dd(m)+":"+dd(s);
+
+       
+
+       }
+       
+       function dd(a)
+       {
+        if(a<10)
+        {
+            return("0"+a);
+        }
+        else{
+            return a;
+        }
+    }
+
+
+
+
+
+
+       function dd(m)
+       {
+        if(m<10)
+        {
+            return("0"+m);
+        }
+        else{
+            return m ;
+        }
+       }
+
+
+
+    </script>
+</body>
+</html>
